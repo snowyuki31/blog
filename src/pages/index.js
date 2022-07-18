@@ -7,7 +7,7 @@ const IndexPage = ({ data }) => {
     <Layout pageTitle="All posts">
       {data.allMdx.nodes.map(node => (
         <article key={node.id}>
-          <Link to={`/${node.slug}`}>{node.frontmatter.title}</Link>
+          <Link to={`${node.slug}`}>{node.frontmatter.title}</Link>
           <p>{node.frontmatter.date}</p>
         </article>
       ))}
