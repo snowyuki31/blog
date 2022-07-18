@@ -15,13 +15,13 @@ const Layout = ({ pageTitle, children }) => {
     `
   )
 
+  const title = `${pageTitle} | ${data.site.siteMetadata.title}`
+
   return (
     <div className={container}>
-      <title>
-        {pageTitle} | {data.site.siteMetadata.title}{" "}
-      </title>
+      <title>{title}</title>
       <header className={siteTitle}>
-        <Link to="/">{data.site.siteMetadata.title}</Link>
+        <Link to="">{data.site.siteMetadata.title}</Link>
       </header>
       <nav></nav>
       <main>{children}</main>
