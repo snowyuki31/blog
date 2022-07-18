@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `blog`,
+  pathPrefix: `/blog`,
   siteMetadata: {
     title: `snowyuki31`,
     siteUrl: `https://www.yourdomain.tld`,
@@ -26,6 +26,12 @@ module.exports = {
       options: {
         name: `blog`,
         path: `${__dirname}/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
       },
     },
   ],
