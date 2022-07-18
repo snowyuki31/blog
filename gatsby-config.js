@@ -6,7 +6,13 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-emotion",
-    "gatsby-plugin-mdx",
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        remarkPlugins: [require("remark-math")],
+        rehypePlugins: [[require("rehype-katex"), { strict: "ignore" }]],
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -20,7 +26,7 @@ module.exports = {
       options: {
         name: `blog`,
         path: `${__dirname}/blog`,
-      }
+      },
     },
   ],
 }
