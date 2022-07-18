@@ -1,11 +1,25 @@
 import Typography from "typography"
 import Theme from "typography-theme-moraga"
 
-Theme.googleFonts.push({
-  name: "Kiwi+Maru",
-  styles: ["300"],
-})
-Theme.bodyFontFamily = ["Kiwi Maru", "Roboto", "serif"]
+Theme.googleFonts.push(
+  {
+    name: "Kiwi+Maru",
+    styles: ["300"],
+  },
+  {
+    name: "Space+Mono",
+    styles: ["400"],
+  },
+  {
+    name: "Noto+Sans+JP",
+    styles: ["400"],
+  }
+)
+
+// Theme.headerFontFamily = ["Space Mono"]
+// Theme.bodyFontFamily = ["Space Mono", "Kiwi Maru", "serif"]
+Theme.headerFontFamily = ["Nato Sans JP"]
+Theme.bodyFontFamily = ["Nato Sans JP"]
 const typography = new Typography(Theme)
 
 // Hot reload typography in development.

@@ -21,10 +21,10 @@ const Layout = ({ pageTitle, children }) => {
     <div className={container}>
       <title>{title}</title>
       <header className={siteTitle}>
-        <Link to="">{data.site.siteMetadata.title}</Link>
+        <Link to="/">{data.site.siteMetadata.title}</Link>
       </header>
       <nav></nav>
-      <main>{children}</main>
+      <body>{children}</body>
     </div>
   )
 }
