@@ -1,8 +1,8 @@
-import * as React from "react";
-import Layout from "../components/layout";
+import * as React from "react"
+import Layout from "../components/layout"
 
 const IndexPage = () => {
-  return <Layout pageTitle="snowyuki"></Layout>;
-};
+  return <Layout pageTitle="snowyuki"></Layout>
+}
 
-export default IndexPage;
+export default IndexPage
