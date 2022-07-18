@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: "/blog",
   siteMetadata: {
-    title: `blog`,
+    title: `snowyuki31`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
@@ -14,6 +14,13 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
     },
   ],
 }
